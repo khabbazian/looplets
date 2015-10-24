@@ -1,0 +1,16 @@
+Package: looplets
+Type: Package
+Title: Decomposing a graph into loops 
+Version: 0.10
+Date: 2015-10-24
+Author: Mohammad Khabbazian
+Maintainer: Mohammad Khabbazian <khabbazian@wisc.edu>
+Description: It decompose the graph into loops of size three, four and so on. It is useful to undrestand more about the structure of large graphs. The algorithm uses breath first search approach to find and remove loop of size k from graph. The algorithm iterates over k until there is no loop or reaches the loop length upper bound. 
+License: GPL (>= 3) 
+URL: https://github.com/khabbazian/looplets
+Imports: Rcpp (>= 0.12.1)
+LinkingTo: Rcpp
+Depends: R (>= 3.1.0)
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown
+NeedsCompilation: yes

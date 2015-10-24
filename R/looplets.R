@@ -9,6 +9,10 @@
 #'
 #'@return the statistics of the loops including number of loops and number of edges in the counted loops. If edge e is a part of for instance two loops it is counted once.
 #'
+#'@examples
+#'er.edgelist <- ER_graph(3, 100)
+#'g.stat <- graph_loops_stats(er.edgelist)
+#'
 #'@export
 graph_loops_stats <- function(edge.list, max.loop.length=10){
     loops.stats <- decompose_graph_into_loops(edge.list)
@@ -22,6 +26,10 @@ graph_loops_stats <- function(edge.list, max.loop.length=10){
 #'@param average.degree expected node degree. p = average.degree/num.nodes.
 #'@param num.nodes number of nodes of the graph.
 #'@param rseed a seed value for the random number generator.
+#'
+#'@examples
+#'er.edgelist <- ER_graph(3, 100)
+#'g.stat <- graph_loops_stats(er.edgelist)
 #'
 #'@return the edge list of the graph ensemble.
 #'@export
