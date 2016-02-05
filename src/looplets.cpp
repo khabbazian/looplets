@@ -117,7 +117,7 @@ int bfs_undirected_graph(AdjacencyList const &E, const int loopLen,
 			}
 
         
-        //FIXME: TODO: replace memcpy with a more safe way
+        //FIXME: replace memcpy plz 
 		memcpy(&(vLevels[0]) , &(negativeOne[0]), nV*sizeof(VList::value_type));
 		memcpy(&(vParents[0]), &(negativeOne[0]), nV*sizeof(VList::value_type));
 	}
